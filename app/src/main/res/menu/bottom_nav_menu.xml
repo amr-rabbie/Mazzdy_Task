@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/feed"
+        android:title="Feed"
+        android:icon="@drawable/ic_feed" />
+
+
+
+    <item android:id="@+id/placeholder"
+        android:title="" />
+
+    <item android:id="@+id/payments"
+        android:title="Payments"
+        android:icon="@drawable/ic_payments" />
+
+
+
+    <!--<item
+        android:id="@+id/menu_none"
+        android:title=""
+        android:visible="false"/>-->
+</menu>

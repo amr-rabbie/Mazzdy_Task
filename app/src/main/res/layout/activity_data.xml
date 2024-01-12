@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.DataActivity">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        >
+
+
+
+        <Spinner
+            android:id="@+id/categoriesSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:prompt="@string/main_category"
+            android:background="@drawable/ticketrectanglestyle"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Category"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="-6dp"
+            android:background="#FFFFFF"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_spinner_arrow" />
+    </FrameLayout>
+
+   <!--><com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:id="@+id/categoriesSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        app:smsp_errorText="Must select main category"
+        app:smsp_floatingLabelColor="#D3D3D3"
+        app:smsp_floatingLabelText="Main Category"
+        app:smsp_hint="Main Category"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:smsp_hintColor="#D3D3D3"
+        app:smsp_itemColor="#512DA8"
+        app:smsp_itemListColor="#000000"
+        app:smsp_itemListHintBackgroundColor="#808080"
+        app:smsp_itemListHintColor="#FFFFFF"
+        app:smsp_multilineError="false"
+        android:background="@drawable/ticketrectanglestyle"
+        app:smsp_selectedItemListColor="#FF5252" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        >
+
+        <Spinner
+            android:id="@+id/subcategoriesSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/ticketrectanglestyle"></Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Category"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="-6dp"
+            android:background="#FFFFFF"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_spinner_arrow" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/procestypesfl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:visibility="gone"
+       >
+
+        <Spinner
+            android:id="@+id/processtypesSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/ticketrectanglestyle"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Process Type"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="-6dp"
+            android:background="#FFFFFF"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_spinner_arrow" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/brandsfl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:visibility="gone"
+        >
+
+        <Spinner
+            android:id="@+id/brandsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/ticketrectanglestyle"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="-6dp"
+            android:background="#FFFFFF"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_spinner_arrow" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/transmissiontypefl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:visibility="gone"
+        >
+
+        <Spinner
+            android:id="@+id/transmissiontypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/ticketrectanglestyle"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transmission Type"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="-6dp"
+            android:background="#FFFFFF"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_spinner_arrow" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fueltypefl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:visibility="gone"
+        >
+
+        <Spinner
+            android:id="@+id/fueltypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/ticketrectanglestyle"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel Type"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="-6dp"
+            android:background="#FFFFFF"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_spinner_arrow" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/conditionfl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:visibility="gone"
+        >
+
+        <Spinner
+            android:id="@+id/conditionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/ticketrectanglestyle"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condition"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="-6dp"
+            android:background="#FFFFFF"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_spinner_arrow" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colorfl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:visibility="gone"
+        >
+
+        <Spinner
+            android:id="@+id/colorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/ticketrectanglestyle"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="-6dp"
+            android:background="#FFFFFF"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_spinner_arrow" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Submit"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        android:background="@drawable/buttonstyle"
+        android:textStyle="bold"/>
+
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
